@@ -1,5 +1,5 @@
-function HeroPage() {
+function HeroPage(): void {
   return;
 }
 
-export default HeroPage
+export default HeroPage;
