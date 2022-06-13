@@ -3,17 +3,20 @@ import Link from "next/link";
 function Navigation() {
   return (
     <header className={classes.header}>
-      <div className={classes.logo}>Projects</div>
+      <div className={classes.logo}>Tony La Forgia</div>
       <nav>
         <ul>
           <li>
-            <Link href="/projects">Projects</Link>
+            <Link href="/">Home</Link>
           </li>
           <li>
-            <Link href="/about">About</Link>
+            <Link href="/Projects">Projects</Link>
           </li>
           <li>
-            <Link href="/contact">Contact</Link>
+            <Link href="/About">About</Link>
+          </li>
+          <li>
+            <Link href="/Contact">Contact Me</Link>
           </li>
         </ul>
       </nav>
