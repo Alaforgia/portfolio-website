@@ -15,8 +15,8 @@
     "jsx": "preserve",
     "incremental": true,
     "outDir": "./dist", // Specify an output folder for all emitted files
-    "rootDir": "./pages" // Specify the root folder within your source files
+    "rootDir": "./src" // Specify the root folder within your source files
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
-  "exclude": ["node_modules"]
+  "exclude": ["node_modules", "src/components"]
 }
