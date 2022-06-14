@@ -1,9 +1,13 @@
-import React from 'react'
+import Layout from "../../components/layout/Layout";
 
 function ContactMe() {
   return (
-    <div>ContactMe</div>
-  )
+    <Layout>
+      <div>
+        <h3>Email Form? Links to Social Media?</h3>
+      </div>
+    </Layout>
+  );
 }
 
-export default ContactMe
+export default ContactMe;
