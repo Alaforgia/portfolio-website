@@ -1,6 +1,6 @@
 import Layout from "../../components/layout/Layout";
 import Image from "next/image";
-import profilePic from '../../../public/Screen Shot 2022-04-04 at 8.54.29 AM.png'
+import profilePic from '../../../public/solo-project-pic1.png'
 
 function Projects() {
   return (
