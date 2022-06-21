@@ -6,15 +6,17 @@ import ProjectStyles from "../../components/project-style/ProjectStyles";
 
 function Projects() {
   return (
-    <Layout>
-      <ProjectStyles>
+    <>
+      <Layout>
         <div>
           <h3>Projects w/ pictures and description</h3>
-          <Image src={soloProjectPic1} alt="My Recipe View" layout={"responsive"} />
-          <Image src={soloProjectPic2} alt="Recipe Detail View" layout={"responsive"} />
         </div>
-      </ProjectStyles>
-    </Layout>
+        <ProjectStyles>
+          <Image src={soloProjectPic1} alt="My Recipe View" layout={"intrinsic"} />
+          <Image src={soloProjectPic2} alt="Recipe Detail View" layout={"intrinsic"} />
+        </ProjectStyles>
+      </Layout>
+    </>
   );
 }
 
