@@ -1,19 +1,23 @@
-
-
 .images {
   width: 100%;
-  height: 40rem;
+  height: 33rem;
   /* display: block; */
   display: flex;
   flex-wrap: nowrap;
   position: relative;
   /* max-width: 100% */
   /* object-fit: cover; */
-  /* align-items: center; */
+  align-items: center;
   justify-content: center;
-  object-fit: contain;
-  object-position: 50% 50%;
+  /* object-fit: contain; */
+  /* object-position: 50% 50%; */
   padding: 10px;
   margin-top: 80px;
-  column-gap: 50px
+  column-gap: 50px;
+}
+
+.images:hover {
+  transition: .5s ease;
+  opacity: 0.5;
+  
 }
