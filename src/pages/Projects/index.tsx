@@ -13,13 +13,6 @@ function Projects(props: any) {
           <h3>Projects w/ pictures and description</h3>
         </div>
         <ProjectStyles />
-        {/* <ProjectStyles>
-          <Image src={soloProjectPic1} alt="My Recipe View" layout={"intrinsic"} />
-          <Image src={soloProjectPic2} alt="Recipe Detail View" layout={"intrinsic"} />
-        </ProjectStyles>
-        <div className={styles.middle}>
-        <div className={styles.text}>Hello world</div>
-        </div> */}
       </Layout>
     </>
   );
