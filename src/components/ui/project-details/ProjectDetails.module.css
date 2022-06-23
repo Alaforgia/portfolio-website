@@ -1,0 +1,12 @@
+.container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-wrap: nowrap;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  column-gap: 20px;
+  -webkit-font-smoothing: antialiased;
+}
