@@ -1,8 +1,12 @@
-import classes from "../ui/HeroStyles.module.css"
+import classes from "../ui/HeroStyles.module.css";
 import React from "react";
 
 function HeroStyles(props: any) {
-  return <div className={classes.card}>{props.children}</div>;
+  return (
+    <div className={classes.body}>
+      <div className={classes.card}>{props.children}</div>
+    </div>
+  );
 }
 
 export default HeroStyles;
