@@ -24,6 +24,10 @@
   }
 }
 
+.images img {
+  padding: 100px 0 130px 0;
+}
+
 .images:hover {
   transition: 0.7s ease;
   /* transition: all 0.3s ease-in-out; */

@@ -1,4 +1,4 @@
-import classes from "../ui/HeroStyles.module.css";
+import classes from "../hero-styles/HeroStyles.module.css";
 import React from "react";
 
 function HeroStyles(props: any) {

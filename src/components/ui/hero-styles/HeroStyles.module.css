@@ -9,6 +9,8 @@
   animation: fadeInAnimation ease 4s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
+  /* line-height: 18pt; */
+  padding: 100px 0 130px 0;
 }
 
 @keyframes fadeInAnimation {
