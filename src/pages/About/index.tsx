@@ -1,12 +1,11 @@
 // import HeroStyles from "../../components/ui/HeroStyles";
 import Layout from "../../components/layout/Layout";
+import AboutDetails from "../../components/ui/about-details/AboutDetails";
 
 function About() {
   return (
     <Layout>
-        <div>
-          <h3>My name is Anthony &quot;Tony&quot; La Forgia</h3>
-        </div>
+      <AboutDetails />
     </Layout>
   );
 }

@@ -8,10 +8,11 @@
   padding: 0 10%;
   /* position: fixed; */
   max-width: 100%;
-  animation: fadeInAnimation ease-in 4s;
+  animation: fadeInAnimation ease-in 6s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
-  /* animation-duration: 1s; */
+  /* animation-delay: 2s; */
+  animation-duration: 2s;
 }
 
 @keyframes fadeInAnimation {

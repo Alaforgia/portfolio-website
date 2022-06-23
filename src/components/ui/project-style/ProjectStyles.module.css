@@ -9,9 +9,10 @@
   padding: 10px;
   column-gap: 20px;
   -webkit-font-smoothing: antialiased;
-  animation: fadeInAnimation ease 5s;
+  animation: fadeInAnimation linear 4s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
+  animation-duration: 2s;
 }
 
 @keyframes fadeInAnimation {
