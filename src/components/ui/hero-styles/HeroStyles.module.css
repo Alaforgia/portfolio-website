@@ -11,6 +11,8 @@
   animation-fill-mode: forwards;
   /* line-height: 18pt; */
   padding: 100px 0 130px 0;
+  /* Gave hero component full viewport */
+  min-height: 100vh;
 }
 
 @keyframes fadeInAnimation {

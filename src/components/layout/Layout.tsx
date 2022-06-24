@@ -1,6 +1,7 @@
 import classes from "./Layout.module.css";
 import Navigation from "./Navigation";
 import { useState } from "react";
+import Footer from "./Footer";
 
 function Layout(props: any) {
   const [isDark, setIsDark] = useState(false);
@@ -8,6 +9,7 @@ function Layout(props: any) {
     <div>
       <Navigation />
       <main className={classes.main}>{props.children}</main>
+      <Footer />
       <style jsx global>
         {`
           body {
