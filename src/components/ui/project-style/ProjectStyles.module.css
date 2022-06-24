@@ -35,11 +35,11 @@
 }
 
 .images:hover .middle {
-  transition: 0.7s ease;
+  transition: 0.3s ease;
   /* transition: all 0.3s ease-in-out; */
   opacity: 1;
   /* border: 1px solid black; */
-}
+} 
 
 .middle {
   /* transition: 0.5s ease;

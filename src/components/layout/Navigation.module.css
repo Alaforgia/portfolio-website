@@ -12,11 +12,12 @@
   max-width: 100%;
   border-bottom: 2px solid gray;
   /* animation styles */
-  /* animation: fadeInAnimation ease-in 6s; */
-  /* animation-iteration-count: 1; */
-  /* animation-fill-mode: forwards; */
-  /* animation-delay: 2s; */
-  /* animation-duration: 2s; */
+  /* animation: fadeInAnimation ease-in 6s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-delay: 2s;
+  animation-duration: 2s; */
+  /* popDown animation */
   animation-duration: 0.5s;
   animation-timing-function: ease;
   animation-delay: 0s;
@@ -48,8 +49,10 @@
   top: inherit;
 } */
 
-@keyframs popDown {
-  transform: translateY(-100px);
+@keyframes popDown {
+  0% {
+    transform: translateY(-100px);
+  }
 }
 
 @keyframes fadeInAnimation {
