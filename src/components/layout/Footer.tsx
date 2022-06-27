@@ -8,8 +8,8 @@ function Footer(): any {
     <>
       <footer className={styles.footer}>
         <div className={styles.social}>
-          <FontAwesomeIcon icon={faGithub} />
-          <FontAwesomeIcon icon={faLinkedin} />
+          <FontAwesomeIcon icon={faGithub} fixedWidth />
+          <FontAwesomeIcon icon={faLinkedin} fixedWidth />
         </div>
         Footer
       </footer>

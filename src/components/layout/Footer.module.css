@@ -1,7 +1,16 @@
 .footer {
   color: white;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
 }
 
-.social{
-  
+.social {
+  font-size: 32px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+
 }
