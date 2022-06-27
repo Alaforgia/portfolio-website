@@ -4,7 +4,12 @@
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
+  position: relative;
   margin-bottom: 10px;
+  background-color: slategray;
+  padding: 70px 0 50px 0;
+  /* height: 120px; */
+  /* width: auto; */
 }
 
 .social {
@@ -12,5 +17,4 @@
   display: flex;
   flex-wrap: wrap;
   gap: 16px;
-
 }
