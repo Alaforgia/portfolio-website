@@ -14,7 +14,7 @@ function MyApp({ Component, pageProps }: AppProps) {
       <Component {...pageProps} />
       <style jsx global>{`
         body {
-          background: ${isDark ? "darkslategray" : "antiquewhite"};
+          background: ${isDark ? "darkslategray" : "black"};
         }
       `}</style>
     </>
