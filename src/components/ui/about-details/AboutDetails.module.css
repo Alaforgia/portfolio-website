@@ -1,3 +1,15 @@
+.container {
+  display: flex;
+  flex-wrap: nowrap;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  padding: 100px 0 130px 0;
+}
+
+.photo {
+}
+
 .text {
   color: white;
   border-radius: 5px;
