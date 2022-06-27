@@ -51,8 +51,10 @@
   width: 55px;
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
-  transition-duration: 0.3s; //transition in the link or parent of the hover allows the effect to be applied both ways
-  transition-timing-function: linear; // this is how you get the effect of 'mouse leave'
+  /* transition in the link or parent of the hover allows the effect to be applied both ways this is how you
+   get the effect of 'mouse leave' */
+  transition-duration: 0.3s;
+  transition-timing-function: linear;
 }
 .linkedicon {
   height: 55px;
