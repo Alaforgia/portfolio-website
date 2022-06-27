@@ -9,10 +9,6 @@ function Footer(): any {
   return (
     <>
       <footer className={styles.footer}>
-        <div className={styles.copyright}>
-          <FontAwesomeIcon icon={faCopyright} />
-          <p>Tony La Forgia</p>
-        </div>
         <div className={styles.social}>
           <Link href={"https://github.com/Alaforgia"}>
             <div className={styles.giticon}>
@@ -24,6 +20,10 @@ function Footer(): any {
               <FontAwesomeIcon icon={faLinkedin} fixedWidth />
             </Link>
           </div>
+        </div>
+        <div className={styles.copyright}>
+          <FontAwesomeIcon icon={faCopyright} />
+          <p>Tony La Forgia 2022</p>
         </div>
       </footer>
     </>

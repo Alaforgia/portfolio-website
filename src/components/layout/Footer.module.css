@@ -1,12 +1,13 @@
 .footer {
   color: white;
   display: flex;
+  flex-direction: column;
   /* flex-wrap: wrap; */
   align-items: center;
   justify-content: center;
   position: relative;
   /* margin-bottom: 10px; */
-  background-color: slategray;
+  background-color: #000d1a;
   padding: 30px 0 30px 0;
   text-align: center;
   /* height: 120px; */
@@ -14,24 +15,21 @@
 }
 
 .copyright {
-  position: relative;
-  right: 320px;
-  bottom: 6px;
-  align-items: flex-start;
-  /* align-content: flex-start; */
-  /* align-self: flex-start; */
+  align-items: center;
   display: flex;
   flex-wrap: wrap;
-  justify-content: flex-start;
-  /* text-align: left; */
+  justify-content: center;
+  text-align: center;
   flex-direction: row;
+  color: white;
+  font-size: 12px;
+  color: #696969;
 }
 
 .copyright p {
   display: flex;
-  position: relative;
-  left: 12px;
-  bottom: 17px;
+  color: inherit;
+  flex-direction: row;
 }
 
 .social {
@@ -41,6 +39,7 @@
   font-size: 30px;
   flex-wrap: wrap;
   gap: 1px;
+  justify-content: center;
 }
 
 .giticon {
@@ -52,6 +51,8 @@
   width: 55px;
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
+  transition-duration: 0.3s; //transition in the link or parent of the hover allows the effect to be applied both ways
+  transition-timing-function: linear; // this is how you get the effect of 'mouse leave'
 }
 .linkedicon {
   height: 55px;
@@ -62,19 +63,17 @@
   width: 55px;
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
+  transition-duration: 0.3s;
+  transition-timing-function: linear;
 }
 
 .giticon:hover {
   cursor: pointer;
-  color: red;
-  transform: scale(1.5, 1.5);
-  transition-duration: 0.3s;
-  transition-timing-function: ease-in-out;
+  color: #8b0000;
+  transform: scale(1.2, 1.2);
 }
 .linkedicon:hover {
   cursor: pointer;
-  color: red;
-  transform: scale(1.5, 1.5);
-  transition-duration: 0.3s;
-  transition-timing-function: ease-in-out;
+  color: #8b0000;
+  transform: scale(1.2, 1.2);
 }
