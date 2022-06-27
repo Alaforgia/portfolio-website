@@ -5,7 +5,7 @@
   align-items: center;
   justify-content: center;
   padding: 100px 0 1px 0;
-  width: 60%;
+  width: 100%;
   height: auto;
 }
 
@@ -24,20 +24,28 @@
 }
 
 .bunny:hover {
-  animation: fadeInAnimation linear 0.6s;
+  animation: fadeInAnimation;
+  animation-duration: 0.5s;
   animation-iteration-count: 1;
   animation-fill-mode: both;
+  animation-timing-function: linear;
+  cursor: default;
+}
+
+.bunny p {
+  transition-duration: 10s;
+  transition-timing-function: linear;
 }
 
 .bunny {
   position: absolute;
-  top: 47%;
-  left: 80%;
+  top: 49%;
+  left: 70%;
   transform: translate(-50%, -50%);
   font-size: 22px;
   color: white;
   opacity: 0;
-  padding: 38px;
+  padding: 45px;
 }
 
 @keyframes fadeInAnimation {
@@ -56,4 +64,5 @@
   font-size: 1.1rem;
   font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New,
     monospace;
+  text-align: center;
 }
