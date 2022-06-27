@@ -1,18 +1,26 @@
 .container {
   display: flex;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   position: relative;
   align-items: center;
   justify-content: center;
-  padding: 100px 0 130px 0;
+  padding: 100px 0 1px 0;
+  width: 60%;
+  height: auto;
 }
 
 .photo {
 }
 
+.photo img {
+  border-radius: 40%;
+  object-fit: cover;
+  object-position: 20% 100%;
+}
+
 .text {
   color: white;
-  border-radius: 5px;
+  /* border-radius: 5px; */
   padding: 0.75rem;
   font-size: 1.1rem;
   font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New,

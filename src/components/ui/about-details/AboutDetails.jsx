@@ -8,7 +8,14 @@ function AboutDetails() {
       <div className={styles.photo}>
         <ShimmerImage src="/bunpic1.png" alt="personal picture" width={400} height={450} />
       </div>
-      <h3 className={styles.text}>My name is Anthony &quot;Tony&quot; La Forgia</h3>
+      <div className={styles.text}>
+        <h2>Anthony &quot;Tony&quot; La Forgia</h2>
+        <h5>Full-Stack Software Engineer</h5>
+        <p>
+          I am new to the software engineering space having recently completed an immersive learning program at Prime
+          Digital Academy located in Minneapolis, MN{" "}
+        </p>
+      </div>
     </div>
   );
 }
