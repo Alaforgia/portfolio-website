@@ -6,7 +6,7 @@
   position: relative;
   align-items: center;
   justify-content: center;
-  padding: 10px;
+  /* padding: 10px; */
   column-gap: 20px;
   -webkit-font-smoothing: antialiased;
   animation: fadeInAnimation linear 4s;
@@ -26,6 +26,7 @@
 
 .images img {
   padding: 100px 0 130px 0;
+  object-fit: cover;
 }
 
 .images:hover {
@@ -39,7 +40,7 @@
   /* transition: all 0.3s ease-in-out; */
   opacity: 1;
   /* border: 1px solid black; */
-} 
+}
 
 .middle {
   /* transition: 0.5s ease;
@@ -71,7 +72,6 @@
   /* background-color: #04aa6d; */
   color: #1b242f;
   font-size: 24px;
-  padding: 10px 24px;
   position: relative;
   text-align: center;
   opacity: 1;
@@ -93,7 +93,7 @@
 .subtext {
   color: darkred;
   font-size: 16px;
-  padding: 12px 24px;
+  /* padding: 12px 24px; */
   position: relative;
   text-align: center;
   opacity: 1;
@@ -104,7 +104,7 @@
 }
 
 .middle:hover .subtext {
-  transform: translate(0px, 50px);
+  transform: translate(0px, 70px);
   transition: all 0.5s ease-in-out;
 }
 
