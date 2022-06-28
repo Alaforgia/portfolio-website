@@ -14,8 +14,8 @@ function ProjectStyles(props: any) {
   return (
     <>
       <div className={styles.images}>
+        <ShimmerImage src="/STNpic.png" alt="Prime Group Project" width={400} height={450} />
         {/* Image original width={829} height={1729} */}
-        {/* <ShimmerImage src="/solo-project-pic1.png" alt="My Recipe View" width={380} height={430} /> */}
         <ShimmerImage src="/solo-project-pic2.png" alt="Recipe Detail View" width={400} height={450} />
         <div className={styles.middle}>
           <p className={styles.text}>Solo Project Recipe App</p>
