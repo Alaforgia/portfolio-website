@@ -21,9 +21,11 @@ const HomePage = () => {
     },
     {
       id: "p2",
-      title: "",
-      image: "/public/solo-project-pic1.png",
-      description: "Prime Solo Project Recipe App",
+      title: "Stronger Together Now Connect App ",
+      image: {
+        domains: ["/public/STNpic.png"],
+      },
+      description: "Prime Group Project",
     },
   ];
 
