@@ -15,11 +15,11 @@ function Footer(): any {
               <FontAwesomeIcon icon={faGithub} fixedWidth />
             </a>
           </Link>
-          <div className={styles.linkedicon}>
-            <Link href={"https://www.linkedin.com/in/anthony-la-forgia-971932196/"}>
+            <Link href={"https://www.linkedin.com/in/anthony-la-forgia-971932196/"} passHref>
+          <a className={styles.linkedicon} target="_blank">
               <FontAwesomeIcon icon={faLinkedin} fixedWidth />
+          </a>
             </Link>
-          </div>
         </div>
         <div className={styles.copyright}>
           <FontAwesomeIcon icon={faCopyright} />
