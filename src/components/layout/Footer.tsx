@@ -10,10 +10,10 @@ function Footer(): any {
     <>
       <footer className={styles.footer}>
         <div className={styles.social}>
-          <Link href={"https://github.com/Alaforgia"}>
-            <div className={styles.giticon}>
+          <Link href={"https://github.com/Alaforgia"} passHref>
+            <a className={styles.giticon} target="_blank">
               <FontAwesomeIcon icon={faGithub} fixedWidth />
-            </div>
+            </a>
           </Link>
           <div className={styles.linkedicon}>
             <Link href={"https://www.linkedin.com/in/anthony-la-forgia-971932196/"}>
