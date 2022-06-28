@@ -1,5 +1,5 @@
 .images {
-  width: 60%;
+  width: 50%;
   height: auto;
   display: flex;
   flex-wrap: nowrap;
@@ -28,6 +28,7 @@
 .images img {
   padding: 100px 0 130px 0;
   object-fit: cover;
+  object-position: 1px 1%;
 }
 
 .images:hover {
