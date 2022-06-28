@@ -9,13 +9,32 @@ import { useState } from "react";
 
 const HomePage = () => {
   const [isDark, setIsDark] = useState(false);
+
+  const TECH_PROJECTS = [
+    {
+      id: "p1",
+      title: "Whose Recipe Is It Anyways?",
+      image: {
+        domains: ["/public/solo-project-pic1.png", "/public/solo-project-pic2.png"],
+      },
+      description: "Prime Solo Project Recipe App",
+    },
+    {
+      id: "p2",
+      title: "",
+      image: "/public/solo-project-pic1.png",
+      description: "Prime Solo Project Recipe App",
+    },
+  ];
+
   return (
     <>
-     <style jsx global>{`
-        body {
-          background: ${isDark ? "darkslategray" : "black"};
-        }
-      `}
+      <style jsx global>
+        {`
+          body {
+            background: ${isDark ? "darkslategray" : "black"};
+          }
+        `}
       </style>
       <Layout>
         <HeroPage />
