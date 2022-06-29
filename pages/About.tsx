@@ -1,6 +1,6 @@
 // import HeroStyles from "../../components/ui/HeroStyles";
-import Layout from "../../components/layout/Layout";
-import AboutDetails from "../../components/ui/about-details/AboutDetails";
+import Layout from "../src/components/layout/Layout";
+import AboutDetails from "../src/components/ui/about-details/AboutDetails";
 
 function About() {
   return (

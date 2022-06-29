@@ -2,6 +2,7 @@
   width: 100%;
   height: auto;
   display: flex;
+  flex-direction: row;
   flex-wrap: nowrap;
   position: relative;
   align-items: center;
@@ -14,7 +15,14 @@
   column-gap: 20px;
   align-items: center;
   justify-content: center;
- 
+  flex-direction: row;
+  flex-wrap: nowrap;
+  -webkit-font-smoothing: antialiased;
+  animation: fadeInAnimation ease 10s;
+  animation-iteration-count: 1;
+  animation-fill-mode: both;
+  /* animation-duration: 10s; */
+  /* transition-duration: 8s; */
 }
 
 @keyframes fadeInAnimation {
@@ -26,22 +34,29 @@
   }
 }
 
+.stn {
+ 
+}
+
+.recipe {
+ 
+}
+
+.stn:hover {
+  opacity: 1;
+}
+
 .images img {
   padding: 100px 0 130px 0;
   object-fit: cover;
   object-position: 1px 1%;
-  -webkit-font-smoothing: antialiased;
-  animation: fadeInAnimation ease 10s;
-  animation-iteration-count: 1;
-  animation-fill-mode: both;
-  /* animation-duration: 10s; */
-  transition-duration: 8s;
+  /* opacity: 1; */
 }
 
 .images:hover {
-  animation-duration: 5s;
+  /* animation-duration: 5s; */
   /* cursor: pointer; */
-  transition: 5s ease;
+  /* transition: 5s ease; */
   /* transition: all 0.3s ease-in-out; */
   /* opacity: 0.5; */
 }
@@ -49,6 +64,7 @@
 .images:hover .middle {
   /* transition: 0.3s ease; */
   /* transition: all 0.3s ease-in-out; */
+  /* position: relative; */
   opacity: 1;
   /* border: 1px solid black; */
 }
@@ -66,6 +82,8 @@
   flex-wrap: nowrap; */
 }
 .middle {
+  /* display: flex; */
+  /* flex-wrap: nowrap; */
   position: absolute;
   top: 0;
   bottom: 0;

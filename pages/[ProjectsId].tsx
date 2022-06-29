@@ -1,11 +1,11 @@
-import Layout from "../../components/layout/Layout";
+import Layout from "../src/components/layout/Layout";
 import Image from "next/image";
 import soloProjectPic1 from "../../../public/solo-project-pic1.png";
 import soloProjectPic2 from "../../../public/solo-project-pic2.png";
-import ProjectStyles from "../../components/ui/project-style/ProjectStyles";
+import ProjectStyles from "../src/components/ui/ProjectList/ProjectList";
 import styles from "../../components/project-style/ProjectStyles.module.css";
-import ShimmerImage from "../../utils/ShimmerImage";
-import ProjectDetails from "../../components/ui/project-details/ProjectDetails";
+import ShimmerImage from "../src/utils/ShimmerImage";
+import ProjectDetails from "../src/components/ui/project-details/ProjectDetails";
 
 function Projects(props: any) {
   return (
@@ -18,9 +18,9 @@ function Projects(props: any) {
           <h3>Projects w/ pictures and description</h3>
         </div>
         <ProjectDetails
-          // image={props.projectData.image}
-          // title={props.projectData.title}
-          // description={props.projectData.description}
+          image="/solo-project-pic1.png"
+          title="Prime Solo Project Recipe App"
+          description="Prime Solo Project Recipe App"
         />
       </Layout>
     </>
