@@ -34,13 +34,6 @@
   }
 }
 
-.stn {
- 
-}
-
-.recipe {
- 
-}
 
 .stn:hover {
   opacity: 1;
@@ -124,7 +117,7 @@
 .subtext {
   color: darkred;
   font-size: 16px;
-  /* padding: 12px 24px; */
+  padding: 12px 24px;
   position: relative;
   text-align: center;
   opacity: 1;

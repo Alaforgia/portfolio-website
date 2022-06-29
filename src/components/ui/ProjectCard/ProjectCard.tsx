@@ -13,7 +13,7 @@ function ProjectCard(props: any) {
 
   return (
     <div className={styles.card}>
-      <ShimmerImage src={props.image || "/STNpic.png"} alt={props.title} width={400} height={450} />
+      <ShimmerImage src={props.image || "/STNpic.png"} alt={props.title} width={350} height={300} />
       <div className={styles.middle}>
         <p className={styles.text}>Solo Project Recipe App</p>
         <p className={styles.subtext}>React.js/Redux/Tailwindcss</p>

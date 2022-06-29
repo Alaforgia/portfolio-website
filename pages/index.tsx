@@ -3,7 +3,7 @@
 // import styles from "../styles/Home.module.css";
 // import About from "./About/index";
 import Layout from "../src/components/layout/Layout";
-import ProjectStyles from "../src/components/ui/ProjectList/ProjectList";
+import ProjectList from "../src/components/ui/ProjectList/ProjectList";
 import HeroStyles from "../src/components/ui/hero-styles/HeroStyles";
 import { useEffect, useState } from "react";
 
@@ -48,7 +48,7 @@ const HomePage = (props: any) => {
       </style>
       <Layout>
         <HeroStyles />
-        <ProjectStyles projects={loadedProjects} />
+        <ProjectList projects={loadedProjects} />
       </Layout>
     </>
   );
