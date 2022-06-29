@@ -18,7 +18,7 @@ function ProjectStyles(props: any) {
           {/* <ShimmerImage src="/STNpic.png" alt="Prime Group Project" width={400} height={450} /> */}
         <div className={styles.images}>
           {/* Image original width={829} height={1729} */}
-          {/* <ShimmerImage src="/solo-project-pic2.png" alt="Recipe Detail View" width={400} height={450} /> */}
+          <ShimmerImage src="/solo-project-pic2.png" alt="Recipe Detail View" width={400} height={450} />
         <div className={styles.middle}>
           <p className={styles.text}>Solo Project Recipe App</p>
           <p className={styles.subtext}>React.js/Redux/Tailwindcss</p>

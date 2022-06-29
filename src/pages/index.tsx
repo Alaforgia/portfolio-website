@@ -7,7 +7,7 @@ import ProjectStyles from "../components/ui/project-style/ProjectStyles";
 import HeroPage from "./HeroPage";
 import { useState } from "react";
 
-const HomePage = () => {
+const HomePage = (props: any) => {
   const [isDark, setIsDark] = useState(false);
 
   const TECH_PROJECTS = [
@@ -40,10 +40,23 @@ const HomePage = () => {
       </style>
       <Layout>
         <HeroPage />
-        <ProjectStyles />
+        <ProjectStyles projects={props.projects} />
       </Layout>
     </>
   );
 };
 
+// export async function getStaticProps(projects: any) {
+//   return {
+//     props: {
+//       projects: projects.map((project: any) => ({
+//         title: project.title,
+//         address: project.image,
+//         image: project.description,
+//         id: project._id.toString(),
+//       })),
+//     },
+//     revalidate: 1,
+//   };
+// }
 export default HomePage;
