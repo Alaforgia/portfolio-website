@@ -6,6 +6,7 @@ import ProjectStyles from "../src/components/ui/ProjectList/ProjectList";
 import styles from "../../components/project-style/ProjectStyles.module.css";
 import ShimmerImage from "../src/utils/ShimmerImage";
 import ProjectDetails from "../src/components/ui/project-details/ProjectDetails";
+import TECH_PROJECTS from "@src/data/data";
 
 function Projects(props: any) {
   return (
@@ -27,45 +28,38 @@ function Projects(props: any) {
   );
 }
 
-// export async function getStaticPaths() {
-//   return {
-//     fallback: false,
+export async function getStaticPaths() {
+  return {
+    fallback: false,
+    paths: [
+      {
+        params: {
+          projectId: "p1",
+        },
+      },
+      {
+        params: {
+          projectId: "p2",
+        },
+      },
+    ],
+  };
+}
 
-//     // paths: projectId.map((project: any) => ({
-//     //   params: { projectID: project._id.toString() },
-//     // })),
+export async function getStaticProps(context: any) {
+  const projectId = context.params.projectId;
+  return {
+    props: {
+      projectData: {
+        id: "p1",
+        title: "Whose Recipe Is It Anyways?",
+        image: {
+          domains: ["/public/solo-project-pic1.png", "/public/solo-project-pic2.png"],
+        },
+        description: "Prime Solo Project Recipe App",
+      },
+    },
+  };
+}
 
-//     paths: [
-//       {
-//         params: {
-//           projectId: "p1",
-//         },
-//       },
-//       {
-//         params: {
-//           projectId: "p2",
-//         },
-//       },
-//     ],
-//   };
-// }
-
-// export async function getStaticProps(context: any): Promise<{
-//   props: { projectData: { id: string; title: string; image: { domains: string[] }; description: string } };
-// }> {
-//   const projectId = context.params.projectId;
-
-//   return {
-//     props: {
-//       projectData: {
-//         id: "p1",
-//         title: "Whose Recipe Is It Anyways?",
-//         image: {
-//           domains: ["/public/solo-project-pic1.png", "/public/solo-project-pic2.png"],
-//         },
-//         description: "Prime Solo Project Recipe App",
-//       },
-//     },
-//   };
-// }
 export default Projects;

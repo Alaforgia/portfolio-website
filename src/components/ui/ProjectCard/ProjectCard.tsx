@@ -3,6 +3,7 @@ import styles from "./ProjectCard.module.css";
 import classes from "./ProjectCard.module.css";
 import ShimmerImage from "../../../utils/ShimmerImage";
 import { useRouter } from "next/router";
+import data from "../../../data/data"
 
 function ProjectCard(props: any) {
   const router = useRouter();
