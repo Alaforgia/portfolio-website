@@ -7,6 +7,7 @@ import styles from "../../components/project-style/ProjectStyles.module.css";
 import ShimmerImage from "../src/utils/ShimmerImage";
 import ProjectDetails from "../src/components/ui/project-details/ProjectDetails";
 import TECH_PROJECTS from "@src/data/data";
+import Head from "next/head";
 
 function Projects(props: any) {
   return (
@@ -14,14 +15,18 @@ function Projects(props: any) {
       {/* Image original width={829} height={1729} */}
       {/* <ShimmerImage src="/solo-project-pic1.png" alt="My Recipe View" width={829} height={1700} /> */}
       {/* <ShimmerImage src="/solo-project-pic2.png" alt="Recipe Detail View" width={829} height={1700} /> */}
+      <Head>
+        <title>{props.projectData.title}</title>
+        <meta name="description" content={props.projectData.description} />
+      </Head>
       <Layout>
         <div>
           <h3>Projects w/ pictures and description</h3>
         </div>
         <ProjectDetails
-          image="/solo-project-pic1.png"
-          title="Prime Solo Project Recipe App"
-          description="Prime Solo Project Recipe App"
+          image={props.projectData.image}
+          title={props.projectData.title}
+          description={props.projectData.description}
         />
       </Layout>
     </>
