@@ -4,15 +4,10 @@ import TypeAnimation from "react-type-animation";
 function HeroStyles(props: any) {
   return (
     <>
-      <TypeAnimation
-        className={classes.typing}
-        cursor={true}
-        sequence={["Hello", 2000, "Welcome!", 2000]}
-        wrapper="h2"
-      />
-
       <div className={classes.body}>
-        <div className={classes.card}></div>
+        <div className={classes.card}>
+          <TypeAnimation className={classes.typing} cursor={true} sequence={[3000, "Hello.", 4000]} wrapper="h2" />
+        </div>
       </div>
     </>
   );
