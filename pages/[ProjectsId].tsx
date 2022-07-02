@@ -33,9 +33,18 @@ function Projects(props: any) {
   );
 }
 
-export async function getStaticPaths() {
+export async function getStaticPaths(): Promise<{ fallback: boolean; paths: any }> {
+  // const projects: any = TECH_PROJECTS;
+
+  
   return {
     fallback: false,
+    // paths,
+
+    // paths: projectId.map((project) => ({
+    //   params: { meetupID: project._id.toString() },
+    // })),
+
     paths: [
       {
         params: {
@@ -50,20 +59,34 @@ export async function getStaticPaths() {
     ],
   };
 }
+// }
 
-export async function getStaticProps(context: any) {
+export async function getStaticProps(context: any): Promise<{ props: { projectData: { id: any; title: any; image: any; description: any; }; }; }> {
   const projectId = context.params.projectId;
+  console.log("projectId = ", projectId);
+
+  const projects: any = TECH_PROJECTS;
+  const selectedProject = projects.findOne({ id: ObjectId(projectId) });
+
   return {
     props: {
       projectData: {
-        id: "p1",
-        title: "Whose Recipe Is It Anyways?",
-        image: {
-          domains: ["/public/solo-project-pic1.png", "/public/solo-project-pic2.png"],
-        },
-        description: "Prime Solo Project Recipe App",
+        id: selectedProject.id.toString(),
+        title: selectedProject.title,
+        image: selectedProject.image,
+        description: selectedProject.description,
       },
     },
+    // props: {
+    //   projectData: {
+    //     id: "p1",
+    //     title: "Whose Recipe Is It Anyways?",
+    //     image: {
+    //       domains: ["/public/solo-project-pic1.png", "/public/solo-project-pic2.png"],
+    //     },
+    //     description: "Prime Solo Project Recipe App",
+    //   },
+    // },
   };
 }
 
