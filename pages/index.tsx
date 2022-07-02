@@ -39,13 +39,13 @@ const HomePage = (props: any) => {
 
   return (
     <>
-      <style jsx global>
+      {/* <style jsx global>
         {`
           body {
             background: ${isDark ? "darkslategray" : "black"};
           }
         `}
-      </style>
+      </style> */}
       <Layout>
         <HeroStyles />
         <ProjectList projects={loadedProjects} />

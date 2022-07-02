@@ -10,13 +10,13 @@ function Layout(props: any) {
       <Navigation />
       <main className={classes.main}>{props.children}</main>
       <Footer />
-      <style jsx global>
+      {/* <style jsx global>
         {`
           body {
             background: ${isDark ? "darkslategray" : "black"};
           }
         `}
-      </style>
+      </style> */}
     </div>
   );
 }

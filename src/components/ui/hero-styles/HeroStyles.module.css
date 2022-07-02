@@ -1,20 +1,37 @@
+.hero_container {
+  background-image: linear-gradient(45deg, rgba(255, 246, 228, 0.5) 30%, rgba(128, 189, 182, 0.8) 100%),
+    linear-gradient(-45deg, #494d71 0%, rgba(217, 230, 185, 0.5) 80%);
+  background-size: 100%;
+  /* background-origin: content-box; */
+}
+
 .body {
-  background-color: black;
+  /* background-color: white; */
   animation: fadeInAnimation ease 3s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
-  /* line-height: 18pt; */
+  line-height: 18pt;
   padding: 100px 0 130px 0;
   /* Gave hero component full viewport */
   min-height: 100vh;
+  height: auto;
+  width: 100%;
   -webkit-font-smoothing: antialiased;
+  /* BG */
+  /* background-image: linear-gradient(45deg, rgba(255, 246, 228, 0.5) 30%, rgba(128, 189, 182, 0.8) 100%),
+    linear-gradient(-45deg, #494d71 0%, rgba(217, 230, 185, 0.5) 80%);
+  background-size: inherit; */
 }
 
 .card {
   text-align: center;
-  background-color: black;
-  border-radius: 6px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  /* background-color: black; */
+  /* border-radius: 6px; */
+  /* box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2); */
+  height: auto;
+  max-width: 35%;
+  margin: auto;
+  position: relative;
 }
 
 @keyframes fadeInAnimation {

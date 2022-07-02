@@ -11,11 +11,11 @@ function MyApp({ Component, pageProps }: AppProps) {
   return (
     <>
       <Component {...pageProps} />
-      <style jsx global>{`
+      {/* <style jsx global>{`
         body {
           background: ${isDark ? "darkslategray" : "black"};
         }
-      `}</style>
+      `}</style> */}
     </>
   );
 }
