@@ -17,10 +17,6 @@
   height: auto;
   width: 100%;
   -webkit-font-smoothing: antialiased;
-  /* BG */
-  /* background-image: linear-gradient(45deg, rgba(255, 246, 228, 0.5) 30%, rgba(128, 189, 182, 0.8) 100%),
-    linear-gradient(-45deg, #494d71 0%, rgba(217, 230, 185, 0.5) 80%);
-  background-size: inherit; */
 }
 
 .card {
@@ -52,7 +48,7 @@
   /* Animation */
   animation: fadeOutAnimation ease 2s;
   animation-iteration-count: 1;
-  animation-delay: 6s;
+  animation-delay: 3.5s;
   /* retains the style values from the last keyframe when the animation ends */
   animation-fill-mode: forwards;
   -webkit-font-smoothing: antialiased;

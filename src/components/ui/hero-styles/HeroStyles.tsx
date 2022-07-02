@@ -7,7 +7,7 @@ function HeroStyles(props: any) {
       <div className={classes.hero_container}>
         <div className={classes.body}>
           <div className={classes.card}>
-            <TypeAnimation className={classes.typing} cursor={true} sequence={[3000, "Hello.", 4000]} wrapper="h2" />
+            <TypeAnimation className={classes.typing} cursor={true} sequence={[2000, "Hello.", 4000]} wrapper="h2" />
           </div>
         </div>
       </div>
