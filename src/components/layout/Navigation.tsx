@@ -10,9 +10,6 @@ function Navigation() {
             <Link href="/">Home</Link>
           </li>
           <li>
-            <Link href="/Projects">Projects</Link>
-          </li>
-          <li>
             <Link href="/About">About</Link>
           </li>
           <li>
