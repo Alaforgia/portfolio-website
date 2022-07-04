@@ -6,36 +6,26 @@ import Layout from "../src/components/layout/Layout";
 import ProjectList from "../src/components/ui/ProjectList/ProjectList";
 import HeroStyles from "../src/components/ui/hero-styles/HeroStyles";
 import { useEffect, useState } from "react";
+import type { IHomeProjectCard, IProjectCard } from "../src/types/index";
+import homeData from "@src/data/homeData.json";
 
-
-let TECH_PROJECTS: any;
-
-TECH_PROJECTS = [
+const projectsDefault: IHomeProjectCard[] = [
   {
-    id: "p1",
-    title: "Whose Recipe Is It Anyways?",
+    id: "",
+    title: "",
     image: {
-      domains: ["/public/solo-project-pic1.png", "/public/solo-project-pic2.png"],
+      domain: "",
     },
-    description: "Prime Solo Project Recipe App",
-  },
-  {
-    id: "p2",
-    title: "Stronger Together Now Connect App ",
-    image: {
-      domains: ["/public/STNpic.png"],
-    },
-    description: "Prime Group Project",
+    description: "",
   },
 ];
 
-const HomePage = (props: any) => {
-  const [isDark, setIsDark] = useState(false);
-  const [loadedProjects, setLoadedProjects] = useState([]);
+interface IProps {
+  projects: IHomeProjectCard[];
+}
 
-  useEffect((): void => {
-    setLoadedProjects(TECH_PROJECTS);
-  }, []);
+const HomePage = ({ projects }: IProps) => {
+  const [isDark, setIsDark] = useState(false);
 
   return (
     <>
@@ -48,16 +38,17 @@ const HomePage = (props: any) => {
       </style> */}
       <Layout>
         <HeroStyles />
-        <ProjectList projects={loadedProjects} />
+        <ProjectList projects={projects} />
       </Layout>
     </>
   );
 };
 
-export async function getStaticProps(projects: any) {
+export async function getStaticProps() {
+  const projects: IHomeProjectCard[] = homeData.projects;
   return {
     props: {
-      projects: TECH_PROJECTS,
+      projects: projects,
       // projects: projects.map((project: any) => ({
       //   title: project.title,
       //   address: project.image,

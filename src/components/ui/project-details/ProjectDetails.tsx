@@ -1,17 +1,29 @@
 import React from "react";
 import styles from "./ProjectDetails.module.css";
 import ShimmerImage from "../../../utils/ShimmerImage";
+import type { IProjectCard } from "../../../types/index";
 
-function ProjectDetails(props: any) {
+interface IProps {
+  projectData: IProjectCard;
+}
+
+function ProjectDetails({ projectData }: IProps) {
+  console.log("projectdata = ", projectData.image.domains[0]);
+
   return (
     <>
       <div className={styles.container}>
-        {/* <ShimmerImage src="/solo-project-pic1.png" alt="Prime Solo Project Recipe App" width={400} height={450} /> */}
-        <ShimmerImage src={props.image} alt={props.title} width={400} height={450} />
+        {projectData.image.domains.map((image) => {
+          return <ShimmerImage key={image} src={image} alt={projectData.title} width={400} height={450} />;
+        })}
+
+        {/* {typeof projectData.image.domains[0] === "string" && (
+          <ShimmerImage src={projectData.image.domains[0]} alt={projectData.title} width={400} height={450} />
+        )} */}
       </div>
       <div className={styles.text}>
-        <h1>{props.title}</h1>
-        <p>{props.description}</p>
+        <h1>{projectData.title}</h1>
+        <p>{projectData.description}</p>
       </div>
     </>
   );
