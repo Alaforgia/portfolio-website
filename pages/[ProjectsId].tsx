@@ -6,76 +6,54 @@ import ProjectStyles from "../src/components/ui/ProjectList/ProjectList";
 import styles from "../../components/project-style/ProjectStyles.module.css";
 import ShimmerImage from "../src/utils/ShimmerImage";
 import ProjectDetails from "../src/components/ui/project-details/ProjectDetails";
-import TECH_PROJECTS from "@src/data/data";
+import TECH_PROJECTS from "@src/data/data.json";
 import Head from "next/head";
+import type { IProjectCard } from "@src/types";
+import type { GetStaticProps } from "next";
 
-function Projects(props: any) {
+interface IProps {
+  projectData: IProjectCard;
+}
+
+function Projects({ projectData }: IProps) {
   return (
     <>
       {/* Image original width={829} height={1729} */}
       {/* <ShimmerImage src="/solo-project-pic1.png" alt="My Recipe View" width={829} height={1700} /> */}
       {/* <ShimmerImage src="/solo-project-pic2.png" alt="Recipe Detail View" width={829} height={1700} /> */}
       <Head>
-        <title>{props.projectData.title}</title>
-        <meta name="description" content={props.projectData.description} />
+        <title>{projectData.title}</title>
+        <meta name="description" content={projectData.description} />
       </Head>
       <Layout>
         <div>
           <h3>Projects w/ pictures and description</h3>
         </div>
-        <ProjectDetails
-          image={props.projectData.image}
-          title={props.projectData.title}
-          description={props.projectData.description}
-        />
+        <ProjectDetails projectData={projectData} />
       </Layout>
     </>
   );
 }
-
-export async function getStaticPaths(): Promise<{ fallback: boolean; paths: any }> {
-  // const projects: any = TECH_PROJECTS;
-
-  
+export const getStaticPaths = async () => {
   return {
-    fallback: false,
-    // paths,
-
-    // paths: projectId.map((project) => ({
-    //   params: { meetupID: project._id.toString() },
-    // })),
-
-    paths: [
-      {
-        params: {
-          projectId: "p1",
-        },
-      },
-      {
-        params: {
-          projectId: "p2",
-        },
-      },
-    ],
+    paths: [{ params: { projectsId: "p1" } }, { params: { projectsId: "p2" } }],
+    fallback: true,
   };
-}
-// }
+};
 
-export async function getStaticProps(context: any): Promise<{ props: { projectData: { id: any; title: any; image: any; description: any; }; }; }> {
-  const projectId = context.params.projectId;
+export const getStaticProps: GetStaticProps = async (context): Promise<{ props: { projectData: IProjectCard } }> => {
+  const projectId = context?.params?.projectsId;
   console.log("projectId = ", projectId);
 
-  const projects: any = TECH_PROJECTS;
-  const selectedProject = projects.findOne({ id: ObjectId(projectId) });
+  const projects: IProjectCard[] = TECH_PROJECTS.projects;
+  const filteredProjects: IProjectCard[] = projects.filter((project) => {
+    if (project.id === projectId) return true;
+  });
+  const selectedProject: IProjectCard = filteredProjects[0];
 
   return {
     props: {
-      projectData: {
-        id: selectedProject.id.toString(),
-        title: selectedProject.title,
-        image: selectedProject.image,
-        description: selectedProject.description,
-      },
+      projectData: selectedProject,
     },
     // props: {
     //   projectData: {
@@ -88,6 +66,6 @@ export async function getStaticProps(context: any): Promise<{ props: { projectDa
     //   },
     // },
   };
-}
+};
 
 export default Projects;
