@@ -1,7 +1,7 @@
 .card {
   width: 100%;
   height: auto;
-  /* min-width: 100%; */
+  max-width: 300px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -82,7 +82,7 @@
 }
 
 .middle:hover .text {
-  transform: translate(0px, 90px);
+  transform: translate(0px, 25px);
   /* transition: all 0.5s ease-in-out; */
   -webkit-font-smoothing: antialiased;
 }
@@ -103,7 +103,7 @@
 }
 
 .middle:hover .subtext {
-  transform: translate(0px, 70px);
+  transform: translate(0px, 5px);
   /* transition: all 0.5s ease-in-out; */
   -webkit-font-smoothing: antialiased;
 }
@@ -135,7 +135,7 @@
 }
 
 .middle:hover .btn {
-  transform: translate(0px, -5ex);
+  transform: translate(0px, -3ex);
   /* transition: all 0.5s ease-in-out; */
   -webkit-font-smoothing: antialiased;
 }
