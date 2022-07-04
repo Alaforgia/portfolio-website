@@ -1,0 +1,20 @@
+{
+  "projects": [
+    {
+      "id": "p1",
+      "title": "Whose Recipe Is It Anyways?",
+      "image": {
+        "domain": "/solo-project-pic1.png"
+      },
+      "description": "Prime Solo Project Recipe App"
+    },
+    {
+      "id": "p2",
+      "title": "Stronger Together Now Connect App ",
+      "image": {
+        "domain": "/STNpic.png"
+      },
+      "description": "Prime Group Project"
+    }
+  ]
+}
