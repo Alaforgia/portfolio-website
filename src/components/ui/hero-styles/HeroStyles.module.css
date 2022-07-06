@@ -3,6 +3,7 @@
     linear-gradient(-45deg, #494d71 0%, rgba(217, 230, 185, 0.5) 80%);
   background-size: 100%;
   /* background-origin: content-box; */
+  overflow: hidden;
 }
 
 .body {
