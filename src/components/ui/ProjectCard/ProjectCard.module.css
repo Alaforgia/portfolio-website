@@ -24,20 +24,11 @@
 }
 
 .card img {
-  /* padding: 100px 0 130px 0; */
-  /* object-fit: cover; */
-  /* object-position: 1px 1%; */
-  /* display: flex;
-  column-gap: 20px;
-  align-items: center;
-  justify-content: center;
-  flex-direction: row;
-  flex-wrap: wrap; */
+  object-fit: cover;
+  object-position: 45% 35%;
 }
 
 .middle {
-  /* display: flex; */
-  /* flex-wrap: wrap; */
   position: absolute;
   top: 0;
   bottom: 0;
@@ -45,65 +36,51 @@
   right: 0;
   height: 100%;
   width: 100%;
-  /* max-width: 100%; */
-  /* min-width: 100%; */
-  /* min-height: 100%; */
   opacity: 0;
   transition: 0.5s ease;
   background-color: #fff;
-  /* color: #fff; */
   -webkit-font-smoothing: antialiased;
 }
 
 .card:hover .middle {
-  /* transition: 0.3s ease; */
-  /* transition: all 0.3s ease-in-out; */
-  /* position: relative; */
   opacity: 1;
-  /* border: 1px solid black; */
 }
 
 .text {
   color: #1b242f;
-  font-size: 24px;
+  font-size: 22px;
+  padding: 1.5px;
+  bottom: 10px;
   position: relative;
   text-align: center;
   opacity: 1;
   transition: all 0.5s ease-in-out;
   font-weight: bold;
-  /* margin: auto; */
-  /* transition: all 0.3s ease-in-out; */
-  /* z-index: 2; */
-  /* transform: translate(0px, 100px); */
-  /* -webkit-font-smoothing: antialiased; */
-  /* transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%); */
   -webkit-font-smoothing: antialiased;
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
 }
 
 .middle:hover .text {
-  transform: translate(0px, 25px);
-  /* transition: all 0.5s ease-in-out; */
+  transform: translate(0px, 15px);
   -webkit-font-smoothing: antialiased;
 }
 
 .subtext {
   color: darkred;
-  font-size: 16px;
-  /* margin: auto; */
-  padding: 12px 24px;
+  font-size: 13.5px;
+  padding: 0px 10px;
+  bottom: 20px;
   position: relative;
   text-align: center;
   opacity: 1;
   font-weight: bold;
   transition: all 0.5s ease-in-out;
-  /* transition: all 0.3s ease-in-out; */
-  /* z-index: 2; */
   -webkit-font-smoothing: antialiased;
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
 }
 
 .middle:hover .subtext {
-  transform: translate(0px, 5px);
+  transform: translate(0px, 26px);
   /* transition: all 0.5s ease-in-out; */
   -webkit-font-smoothing: antialiased;
 }
@@ -111,21 +88,21 @@
 .btn {
   color: #1b242f;
   background-color: #fff;
-  font-size: 12px;
   position: relative;
   text-align: center;
   opacity: 1;
   cursor: pointer;
   display: inline-block;
-  bottom: 10%;
+  bottom: 6%;
   left: 0;
   position: absolute;
   right: 0;
-  border: 1px solid #e31b6d;
+  border: 1.2px solid #e31b6d;
   border-radius: 25px;
-  font-size: 13pt;
+  font-size: 18px;
+  font-family: Copperplate, Papyrus, fantasy;
   margin: 0% auto;
-  padding: 7px 0px;
+  padding: 6px 0px;
   width: 170px;
   background: #ffffff;
   box-shadow: 7px 7px 14px #f2f2f2, -7px -7px 14px #ffffff;
@@ -135,8 +112,7 @@
 }
 
 .middle:hover .btn {
-  transform: translate(0px, -3ex);
-  /* transition: all 0.5s ease-in-out; */
+  transform: translate(0px, -4ex);
   -webkit-font-smoothing: antialiased;
 }
 
