@@ -1,9 +1,8 @@
-import React, { useEffect } from "react";
 import styles from "./ProjectCard.module.css";
 import classes from "./ProjectCard.module.css";
 import ShimmerImage from "../../../utils/ShimmerImage";
 import { useRouter } from "next/router";
-import data from "../../../data/data.json";
+
 import type { IHomeProjectCard, IProjectCard } from "../../../types/index";
 import { useState } from "react";
 
@@ -18,24 +17,6 @@ function ProjectCard({ project }: IProps) {
   function projectDetailsHandler() {
     router.push("/" + project.id);
   }
-
-  const [isSingleImage, setIsSingleImage] = useState<boolean>(true);
-  const [imageSrc, setImageSrc] = useState<string>("");
-  const [imageSrcs, setImageSrcs] = useState<string[]>([]);
-
-  // useEffect(() => {
-  //   if (project.image.domains.length === 1) {
-  //     setIsSingleImage(true);
-  //     if (typeof project.image.domains === "string") {
-  //       setImageSrc(project.image.domains);
-  //     }
-  //   } else {
-  //     setIsSingleImage(false);
-  //     if (typeof project.image.domains !== "string") {
-  //       setImageSrcs(project.image.domains);
-  //     }
-  //   }
-  // }, [project.image.domains]);
 
   return (
     <div className={styles.card}>
