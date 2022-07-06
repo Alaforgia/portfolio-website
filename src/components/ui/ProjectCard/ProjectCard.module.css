@@ -12,6 +12,9 @@
   animation: fadeInAnimation ease 10s;
   animation-iteration-count: 1;
   animation-fill-mode: both;
+  /* border: 0.1px solid white; */
+  border-radius: 34px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 @keyframes fadeInAnimation {
@@ -26,6 +29,9 @@
 .card img {
   object-fit: cover;
   object-position: 45% 35%;
+  border-radius: 25px;
+  filter: contrast(120%);
+  filter: saturate(1.5);
 }
 
 .middle {
@@ -40,6 +46,7 @@
   transition: 0.5s ease;
   background-color: #fff;
   -webkit-font-smoothing: antialiased;
+  border-radius: 25px;
 }
 
 .card:hover .middle {

@@ -2,6 +2,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  column-gap: 10px;
+  /* border-radius: 50px; */
   /* background-position: -10% 90%; */
   /* background-repeat: space; */
   /* background-size: contain; */

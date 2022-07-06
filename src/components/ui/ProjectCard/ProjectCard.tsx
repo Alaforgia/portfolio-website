@@ -19,7 +19,7 @@ function ProjectCard({ project }: IProps) {
 
   return (
     <div className={styles.card}>
-        <ShimmerImage src={project.image.domain || "/STNpic.png"} alt={project.title} width={350} height={300} />
+        <ShimmerImage src={project.image.domain} alt={project.title} width={350} height={300} />
       
       <div className={styles.middle}>
         <p className={styles.text}>{project.title}</p>
