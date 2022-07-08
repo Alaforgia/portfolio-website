@@ -1,11 +1,10 @@
 import Layout from "../src/components/layout/Layout";
+import ContactForm from "@src/components/ui/ContactForm/ContactForm";
 
 function ContactMe() {
   return (
     <Layout>
-      <div>
-        <h3>Email Form? Links to Social Media?</h3>
-      </div>
+      <ContactForm />
     </Layout>
   );
 }
