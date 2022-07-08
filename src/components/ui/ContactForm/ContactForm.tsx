@@ -5,11 +5,11 @@ function ContactForm() {
   return (
     <div className={styles.contact_container}>
       <h3>Contact Me</h3>
-      <div className={styles.forms}>
-        <form></form>
-        <form></form>
-        <form></form>
-        <form></form>
+      <div className={styles.inputs}>
+      <input type="text"></input>
+      <input type="text"></input>
+      <input type="text"></input>
+      <input type="text"></input>
       </div>
     </div>
   );
