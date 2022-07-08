@@ -17,7 +17,9 @@ function ContactForm() {
           <textarea placeholder="Message" />
         </div>
       </div>
-      <button className={styles.btn}>Send</button>
+      <div className={styles.btn_container}>
+        <button className={styles.btn}>Send</button>
+      </div>
     </div>
   );
 }

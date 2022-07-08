@@ -48,19 +48,19 @@
 }
 
 .inputs::-webkit-input-placeholder {
-  color:red;
+  color: red;
 }
 
 .inputs::-moz-placeholder {
-  color:red;
+  color: red;
 }
 
 .inputs::-ms-placeholder {
-  color:red;
+  color: red;
 }
 
 .inputs::placeholder {
-  color:red;
+  color: red;
 }
 
 .text_area textarea {
@@ -95,4 +95,43 @@
   height: 255px;
   line-height: 27px;
   padding: 0px !important;
+}
+
+.btn_container {
+  height: 100%;
+  width: 604px;
+  max-width: 100%;
+  position: relative;
+  vertical-align: baseline;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.btn {
+  max-width: 100%;
+  color: #1b242f;
+  background-color: #fff;
+  text-align: center;
+  opacity: 1;
+  cursor: pointer;
+  bottom: 6%;
+  border: 1.2px solid #e31b6d;
+  border-radius: 25px;
+  font-size: 18px;
+  font-family: Copperplate, Papyrus, fantasy;
+  padding: 6px 0px;
+  width: 170px;
+  background: #ffffff;
+  box-shadow: 7px 7px 14px #f2f2f2, -7px -7px 14px #ffffff;
+  transition: all 0.5s ease-in-out;
+  cursor: pointer;
+  -webkit-font-smoothing: antialiased;
+}
+
+.btn:hover {
+  background-color: #e31b6d;
+  /* transition: all 0.3s ease-in-out; */
+  background: #e31b6d;
+  box-shadow: 5px 5px 10px #a1a1a1, -5px -5px 10px #ffffff;
+  -webkit-font-smoothing: antialiased;
 }
