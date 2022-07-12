@@ -1,27 +1,27 @@
 .container {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   position: relative;
   align-items: center;
   justify-content: center;
   padding: 100px 0 1px 0;
-  width: 100%;
-  height: auto;
+  max-width: 100%;
+  min-height: 100vh;
   overflow: hidden;
 }
 
 .photo {
-  border: 0px solid black;
-  background-color: black;
   border-radius: 18px;
-  padding: 0px;
-  width: auto;
+  padding: 20px;
+  margin-right: 100px;
+  position: relative;
+
 }
 
 .photo img {
-  border-radius: 50%;
+  border-radius: 1%;
   object-fit: cover;
-  object-position: 20% 100%;
+  object-position: 0% 430%;
 }
 
 .bunny:hover {
@@ -59,9 +59,10 @@
 }
 
 .text {
-  color: white;
+  width: 50%;
+  color: black;
   /* border-radius: 5px; */
-  padding: 0.75rem;
+  padding: 5px;
   font-size: 1.1rem;
   font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New,
     monospace;
