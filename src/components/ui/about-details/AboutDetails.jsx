@@ -16,7 +16,7 @@ function AboutDetails() {
         <h2>Anthony &quot;Tony&quot; La Forgia</h2>
         <h5>Full-Stack Software Engineer</h5>
         <p>
-          I changed careers to be a software engineer in November 2021. I completed an immersive education program at Prime
+          I decided to change careers to be a software engineer in November 2021 by completing an immersive education program at Prime
           Digital Academy located in Minneapolis, MN. I am committed and love learning as much as I can!
         </p>
       </div>
