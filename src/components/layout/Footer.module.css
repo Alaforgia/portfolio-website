@@ -13,6 +13,7 @@
   /* height: 100vh; */
   max-height: 100%;
   width: 100%;
+  -webkit-font-smoothing: antialiased;
 }
 
 .copyright {
@@ -75,9 +76,11 @@
   cursor: pointer;
   color: #D2691E;
   transform: scale(1.2, 1.2);
+  -webkit-font-smoothing: antialiased;
 }
 .linkedicon:hover {
   cursor: pointer;
   color: #D2691E;
   transform: scale(1.2, 1.2);
+  -webkit-font-smoothing: antialiased;
 }

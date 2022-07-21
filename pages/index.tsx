@@ -8,6 +8,7 @@ import HeroStyles from "../src/components/ui/hero-styles/HeroStyles";
 import { useEffect, useState } from "react";
 import type { IHomeProjectCard, IProjectCard } from "../src/types/index";
 import homeData from "@src/data/homeData.json";
+import AboutDetails from "../src/components/ui/about-details/AboutDetails";
 
 const projectsDefault: IHomeProjectCard[] = [
   {
@@ -38,6 +39,7 @@ const HomePage = ({ projects }: IProps) => {
       </style> */}
       <Layout>
         <HeroStyles />
+        <AboutDetails />
         <ProjectList projects={projects} />
       </Layout>
     </>
