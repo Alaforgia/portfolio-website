@@ -10,10 +10,13 @@ function Navigation({ isNavOpen, setIsNavOpen }: any) {
   return (
     <>
       <div className={isNavOpen ? "top-0" : "top-minus-full"}>
-        {isNavOpen ? "top-0" : "top-minus-full"}
         <header className={classes.header}>
           <div className={classes.logo}>Tony La Forgia</div>
-          <HamburgerMenu isNavOpen={isNavOpen} setIsNavOpen={setIsNavOpen} onClick={onClickHandler}>
+          <HamburgerMenu
+            isNavOpen={isNavOpen ? "top-0" : "top-minus-full"}
+            setIsNavOpen={setIsNavOpen}
+            onClick={onClickHandler}
+          >
             <nav className={styles.nav}>
               <ul>
                 <li>

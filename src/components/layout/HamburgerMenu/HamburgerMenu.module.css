@@ -1,12 +1,22 @@
 .button {
   cursor: pointer;
+  position: absolute;
   display: flex;
+  justify-content: center;
   align-items: center;
   overflow: hidden;
+  padding: 0px;
+  max-height: 80px;
+  right: 0px;
 }
 
 .svg {
   transition: all 400ms;
+  viewbox: 0 0 100 100;
+  fill: none;
+  stroke: currentColor;
+  strokewidth: 5;
+  
 }
 
 .top {
