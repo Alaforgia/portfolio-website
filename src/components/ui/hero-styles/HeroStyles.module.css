@@ -4,6 +4,17 @@
   background-size: 100%;
   /* background-origin: content-box; */
   overflow: hidden;
+  /* min-height: 500px; */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  perspective: 10px;
+  object-fit: cover;
+  z-index: 0;
+  transform: translateZ(1px);
 }
 
 .body {
