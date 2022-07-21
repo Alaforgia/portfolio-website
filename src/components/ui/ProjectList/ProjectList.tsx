@@ -16,14 +16,14 @@ function ProjectStyles({ projects }: IProps) {
 
   return (
     <>
-      <body className={styles.container}>
+      <div className={styles.container}>
         <p className={styles.title}>Projects</p>
         <div className={styles.projectlist}>
           {projects.map((card) => {
             return <ProjectCard key={card.id} project={card} />;
           })}
         </div>
-      </body>
+      </div>
     </>
   );
 }
