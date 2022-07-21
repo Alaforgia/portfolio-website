@@ -16,11 +16,14 @@ function ProjectStyles({ projects }: IProps) {
 
   return (
     <>
-      <div className={styles.projectlist}>
-        {projects.map((card) => {
-          return <ProjectCard key={card.id} project={card} />;
-        })}
-      </div>
+      <body className={styles.container}>
+        <p className={styles.title}>Projects</p>
+        <div className={styles.projectlist}>
+          {projects.map((card) => {
+            return <ProjectCard key={card.id} project={card} />;
+          })}
+        </div>
+      </body>
     </>
   );
 }
