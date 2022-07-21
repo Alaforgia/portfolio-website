@@ -7,7 +7,7 @@ function AboutDetails() {
   return (
     <div className={styles.container}>
       <div className={styles.photo}>
-        <ShimmerImage src="/bunpic1.png" alt="personal picture" width={650} height={750} />
+        <ShimmerImage src="/bunpic1.png" alt="personal picture" width={350} height={450} />
         <p className={styles.bunny}>Bunny</p>
       </div>
       <div className={styles.line}>
