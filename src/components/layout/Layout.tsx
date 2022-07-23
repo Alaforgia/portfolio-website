@@ -8,7 +8,7 @@ function Layout(props: any) {
   const [isNavOpen, setIsNavOpen] = useState(false);
   return (
     <div className={classes.layout}>
-      <Navigation isNavOpen={isNavOpen} setIsNavOpen={setIsNavOpen} />
+      {/* <Navigation isNavOpen={isNavOpen} setIsNavOpen={setIsNavOpen} /> */}
       <main className={classes.main}>{props.children}</main>
       <Footer />
       {/* <style jsx global>
