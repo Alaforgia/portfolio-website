@@ -6,13 +6,15 @@
   justify-content: center;
   /* padding: 79px 0 0px 0; */
   max-width: 100%;
-  min-height: 50vh;
+  min-height: 0vh;
+  /* min-height: 500px; */
   height: 45vh;
-  overflow: hidden;
+  /* overflow: hidden; */
   margin: 0 auto;
-  /* background-color: cornsilk; */
-  background-color: dodgerblue;
+  background-color: cornsilk;
+  /* background-color: red; */
   /* background-size: 50% 50%; */
+  /* background-image: transparent; */
   /* background-image: linear-gradient(45deg, rgba(255, 246, 228, 0.5) 30%, rgba(128, 189, 182, 0.8) 100%), */
   /* linear-gradient(-45deg, #494d71 0%, rgba(217, 230, 185, 0.5) 80%); */
   /* min-height: 500px; */
@@ -21,29 +23,32 @@
   /* background-repeat: no-repeat; */
   /* background-size: cover; */
   /* height: 100vh; */
-  overflow-x: hidden;
-  overflow-y: hidden;
-  perspective: 10px;
-  object-fit: cover;
-  z-index: 0;
-  transform: translateZ(1px);
+  /* overflow-x: hidden; */
+  /* overflow-y: hidden; */
+  /* perspective: 10px; */
+  /* object-fit: cover; */
+  /* z-index: 1; */
+  /* transform: translateZ(1px); */
+  margin-bottom: 100px;
 }
 
 .photo {
   border-radius: 18px;
-  padding: 10px;
+  /* padding: 10px; */
   bottom: -30px;
   position: relative;
   right: 30px;
   margin: 0 auto;
   flex-shrink: 10;
   image-rendering: high-quality;
+  height: 45vh;
 }
 
 .photo img {
   border-radius: 1%;
   object-fit: cover;
   object-position: 0% 240%;
+  height: 38vh;
 }
 
 .bunny:hover {
@@ -91,16 +96,16 @@
   margin: 0 auto;
 }
 .text_container {
-  background-color: dodgerblue;
+  /* background-color: dodgerblue; */
   position: relative;
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   flex-direction: column;
   /* text-align: justify; */
   justify-content: center;
   width: 50%;
   max-width: 100%;
-  min-height: 100vh;
+  min-height: 45vh;
   max-height: 100%;
   /* margin: 0 auto; */
   /* margin-left: auto; */
@@ -113,43 +118,50 @@
   font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New,
     monospace;
   position: relative;
-  top: 50px;
+  top: 0px;
   width: 100%;
   height: 100%;
-  min-height: 50vh;
+  min-height: 45vh;
   /* border-radius: 5px; */
   /* font-size: 1.1rem; */
-  /* text-align: justify; */
-  /* display: flex; */
-  /* flex-wrap: wrap; */
-  /* flex-direction: column; */
+  text-align: justify;
+  display: flex;
+  justify-content: center;
+  align-content: flex-end;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  flex-direction: column;
   /* right: 1px; */
   /* margin: 0 auto; */
 }
 
 .text h2 {
   position: relative;
-  top: -22px;
-  right: -60px;
+  top: -42px;
+  /* right: -60px; */
   width: 70%;
   font-family: "Trebuchet MS", Helvetica, sans-serif;
   height: auto;
+  /* align-self: center; */
+  align-items: flex-start;
 }
 
 .text h5 {
   position: relative;
-  top: -36px;
-  right: -60px;
+  top: -66px;
+  right: -20px;
   width: 70%;
   font-family: "Trebuchet MS", Helvetica, sans-serif;
   text-decoration: underline;
   font-size: 11px;
+  /* align-self: center; */
+  align-items: flex-start;
 }
 
 .text p {
   position: relative;
-  top: -5px;
-  right: 19px;
+  top: -40px;
+  right: 49px;
   text-indent: 50px;
   line-height: 1.6;
   width: 90%;
