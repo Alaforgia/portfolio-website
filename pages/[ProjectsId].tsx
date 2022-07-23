@@ -26,9 +26,6 @@ function Projects({ projectData }: IProps) {
         <meta name="description" content={projectData.description} />
       </Head>
       <Layout>
-        <div>
-          <h3>Projects w/ pictures and description</h3>
-        </div>
         <ProjectDetails projectData={projectData} />
       </Layout>
     </>
