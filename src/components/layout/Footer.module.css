@@ -3,22 +3,26 @@
   display: flex;
   flex-direction: column;
   /* flex-wrap: wrap; */
-  align-items: center;
-  justify-content: center;
+  /* align-items: center; */
+  /* justify-content: center; */
   position: absolute;
   /* margin: 0; */
-  background-color: #008B8B;
+  background-color: #008b8b;
   padding: 10px 0 0px 0;
   text-align: center;
-  /* height: 100vh; */
+  height: 95px;
   max-height: 100%;
   width: 100%;
   -webkit-font-smoothing: antialiased;
+  /* background-attachment: fixed; */
+  /* background-position: center; */
+  /* background-repeat: no-repeat; */
+  /* background-size: cover; */
 }
 
 .copyright {
-  align-items: center;
   display: flex;
+  align-items: center;
   flex-wrap: wrap;
   justify-content: center;
   text-align: center;
@@ -26,12 +30,16 @@
   color: white;
   font-size: 12px;
   color: #696969;
+  position: relative;
+  top: -9px;
+  /* align-self: flex-end; */
 }
 
 .copyright p {
   display: flex;
   color: inherit;
-  flex-direction: row;
+  /* flex-direction: row; */
+  /* align-self: flex-end; */
 }
 
 .social {
@@ -58,6 +66,7 @@
    get the effect of 'mouse leave' */
   transition-duration: 0.3s;
   transition-timing-function: linear;
+  color: black;
 }
 .linkedicon {
   height: 55px;
@@ -70,17 +79,51 @@
   -webkit-font-smoothing: antialiased;
   transition-duration: 0.3s;
   transition-timing-function: linear;
+  color: black;
 }
 
 .giticon:hover {
   cursor: pointer;
-  color: #D2691E;
+  color: #d2691e;
   transform: scale(1.2, 1.2);
   -webkit-font-smoothing: antialiased;
 }
 .linkedicon:hover {
   cursor: pointer;
-  color: #D2691E;
+  color: #d2691e;
+  transform: scale(1.2, 1.2);
+  -webkit-font-smoothing: antialiased;
+}
+
+.top {
+  display: flex;
+  align-self: flex-end;
+  /* justify-content: center; */
+  /* align-items: center; */
+  /* align-content: center; */
+  /* flex-wrap: wrap; */
+  /* flex-direction: row; */
+  position: relative;
+  /* z-index: 99; */
+  /* float: right; */
+  cursor: pointer;
+  right: 300px;
+  vertical-align: middle;
+  top: -80px;
+  font-size: 20px;
+  background-color: inherit;
+  border: 1px solid black;
+  /* height: 30px; */
+  /* width: 30px; */
+  border-radius: 50%;
+  transition-duration: 0.3s;
+  transition-timing-function: linear;
+}
+
+.top:hover {
+  cursor: pointer;
+  color: yellow;
+  background-color: black;
   transform: scale(1.2, 1.2);
   -webkit-font-smoothing: antialiased;
 }
