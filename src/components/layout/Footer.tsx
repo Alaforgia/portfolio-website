@@ -3,9 +3,16 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { faCopyright } from "@fortawesome/free-regular-svg-icons";
+// import { faArrowup } from "@fortawesome/free-regular-svg-icons";
+import { faArrowUp } from "@fortawesome/free-solid-svg-icons";
+import { solid, regular, brands } from "@fortawesome/fontawesome-svg-core/import.macro";
 import Link from "next/link";
 
 function Footer(): any {
+  const topButtonHandler = (): any => {
+    document.documentElement.scrollTop = 0;
+  };
+
   return (
     <>
       <footer className={styles.footer}>
@@ -15,16 +22,19 @@ function Footer(): any {
               <FontAwesomeIcon icon={faGithub} fixedWidth />
             </a>
           </Link>
-            <Link href={"https://www.linkedin.com/in/anthony-la-forgia-971932196/"} passHref>
-          <a className={styles.linkedicon} target="_blank">
+          <Link href={"https://www.linkedin.com/in/anthony-la-forgia-971932196/"} passHref>
+            <a className={styles.linkedicon} target="_blank">
               <FontAwesomeIcon icon={faLinkedin} fixedWidth />
-          </a>
-            </Link>
+            </a>
+          </Link>
         </div>
         <div className={styles.copyright}>
           <FontAwesomeIcon icon={faCopyright} />
           <p>Tony La Forgia 2022</p>
         </div>
+        <button className={styles.top} onClick={topButtonHandler}>
+          <FontAwesomeIcon icon={faArrowUp} />
+        </button>
       </footer>
     </>
   );
