@@ -6,7 +6,8 @@
       "image": {
         "domain": "/solo-project-pic1.png"
       },
-      "description": "Prime Digital Academy Solo Project"
+      "description": "Prime Digital Academy Solo Project",
+      "github": "https://github.com/Alaforgia/solo-project-v2#readme"
     },
     {
       "id": "p2",
@@ -14,7 +15,8 @@
       "image": {
         "domain": "/STNpic.png"
       },
-      "description": "Prime Digital Academy Group Project"
+      "description": "Prime Digital Academy Group Project",
+      "github": "https://github.com/StrongerTogetherNoworg/GroupProjectSTN#readme"
     }
   ]
 }
