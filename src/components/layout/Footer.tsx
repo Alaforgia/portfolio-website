@@ -15,6 +15,28 @@ function Footer(): any {
 
   return (
     <>
+      <svg
+        preserveAspectRatio="none"
+        viewBox="0 0 100 102"
+        height="25"
+        width="100%"
+        version="1.1"
+        xmlns="http://www.w3.org/2000/svg"
+        className={styles.svg}
+      >
+        <path d="M0 0 L50 100 L100 0 Z" fill="black" stroke="black"></path>
+      </svg>
+      <svg
+        preserveAspectRatio="none"
+        viewBox="0 0 100 102"
+        height="60"
+        width="100%"
+        version="1.1"
+        xmlns="http://www.w3.org/2000/svg"
+        className={styles.svg2}
+      >
+        <path d="M0 0 L50 100 L100 0 Z" fill="black" stroke="black"></path>
+      </svg>
       <footer className={styles.footer}>
         <div className={styles.social}>
           <Link href={"https://github.com/Alaforgia"} passHref>
