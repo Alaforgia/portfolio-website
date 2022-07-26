@@ -8,7 +8,7 @@
   max-width: 100%;
   min-height: 0vh;
   /* min-height: 500px; */
-  height: 45vh;
+  height: 50vh;
   /* overflow: hidden; */
   margin: 0 auto;
   background-color: cornsilk;
@@ -29,7 +29,7 @@
   /* object-fit: cover; */
   /* z-index: 1; */
   /* transform: translateZ(1px); */
-  margin-bottom: 100px;
+  margin-bottom: 0px;
 }
 
 .photo {
